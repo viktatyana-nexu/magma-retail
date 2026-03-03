@@ -3,76 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magma & Русь — Бобров и Черноземье</title>
+    <title>VIKTANYA BUILD — Снабжение объектов ЦЧР</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans leading-tight">
+<body class="bg-slate-950 text-white font-sans antialiased">
 
-    <!-- ШАПКА -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 h-20 flex justify-between items-center">
-            <div class="flex flex-col">
-                <span class="text-2xl font-black text-blue-800 italic">MAGMA <span class="text-orange-600">&</span> РУСЬ</span>
-                <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Официальный партнер • Бобров</span>
+    <!-- ГЛАВНЫЙ ЭКРАН (ВХОДНАЯ ГРУППА) -->
+    <main class="min-h-screen flex flex-col p-6 md:p-16 relative overflow-hidden">
+        
+        <!-- СВЕТОВЫЕ ЭФФЕКТЫ (ДИЗАЙН) -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-600/10 rounded-full blur-[120px]"></div>
+
+        <!-- ВЕРХ: ЛОГО И ПРЯМАЯ СВЯЗЬ -->
+        <div class="relative z-10 flex justify-between items-start mb-16">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-black italic tracking-tighter uppercase leading-none italic">VIKTANYA<br><span class="text-blue-500">BUILD</span></h1>
+                <p class="text-[10px] uppercase tracking-[0.5em] text-slate-500 font-bold mt-2 leading-none">viktanya.ru • Бобровский филиал</p>
             </div>
             <div class="text-right">
-                <a href="tel:+79000000000" class="text-lg font-bold text-slate-800 hover:text-blue-700 transition">+7 (___) ___-__-__</a>
-                <p class="text-[11px] text-green-600 font-bold uppercase tracking-tighter">● Отдел по работе с ЦЧР</p>
+                <p class="text-[10px] uppercase font-bold text-slate-500 mb-1 tracking-widest">Прямая линия:</p>
+                <a href="tel:+79601171022" class="text-xl md:text-2xl font-black tracking-tighter text-white hover:text-blue-400 transition leading-none">8 (960) 117-10-22</a>
             </div>
         </div>
-    </header>
 
-    <!-- ГЛАВНЫЙ БЛОК -->
-    <section class="bg-slate-900 py-16 px-4 text-white text-center relative overflow-hidden">
-        <div class="relative z-10">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 uppercase leading-none">Оснащение ритейла <br><span class="text-blue-400">в Боброве</span></h1>
-            <p class="text-slate-300 mb-8 max-w-xl mx-auto font-medium text-lg">Авторизованный сервис-партнер: проектирование, поставка и обслуживание оборудования MAGMA и РУСЬ.</p>
-            <div class="flex justify-center gap-3 text-[10px] font-bold uppercase mb-4">
-                <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Тендеры</span>
-                <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Монтаж</span>
-                <span class="bg-slate-800 px-3 py-1 rounded border border-slate-700">Сервис 24/7</span>
+        <!-- ЗАГОЛОВОК С ОФФЕРОМ -->
+        <div class="relative z-10 mb-12">
+            <h2 class="text-5xl md:text-8xl font-black uppercase leading-[0.85] tracking-tighter italic">КОМПЛЕКСНОЕ<br>СНАБЖЕНИЕ<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 italic">ОБЪЕКТОВ</span></h2>
+            <p class="mt-8 max-w-xl text-lg text-slate-400 font-medium leading-relaxed italic">Единое окно поставок для застройщиков и ритейла Воронежской области. Выберите направление для работы:</p>
+        </div>
+
+        <!-- ПЕРЕХОДНИКИ (ТРИ КНОПКИ-ВХОДА) -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 flex-grow">
+            
+            <!-- ВХОД 1: ХОЛОД И РИТЕЙЛ -->
+            <a href="https://viktatyana-nexu.github.io" class="group relative bg-slate-900/50 border border-slate-800 rounded-3xl p-8 flex flex-col justify-end overflow-hidden hover:border-blue-500 transition-all duration-500">
+                <div class="absolute top-0 left-0 w-full h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                <h3 class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-2 italic">Департамент холода</h3>
+                <h2 class="text-3xl font-black italic uppercase leading-none mb-4">MAGMA<br>& РУСЬ</h2>
+                <p class="text-sm text-slate-500 group-hover:text-slate-300 transition italic">Холодильное и торговое оборудование под ключ.</p>
+                <div class="mt-8 text-blue-500 font-black text-xs uppercase tracking-widest flex items-center gap-2">В каталог <span class="group-hover:translate-x-2 transition-transform">→</span></div>
+            </a>
+
+            <!-- ВХОД 2: ИНЖЕНЕРИЯ -->
+            <a href="https://viktatyana-nexu.github.io" class="group relative bg-slate-900/50 border border-slate-800 rounded-3xl p-8 flex flex-col justify-end overflow-hidden hover:border-orange-500 transition-all duration-500">
+                <div class="absolute top-0 left-0 w-full h-1 bg-orange-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                <h3 class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2 italic">Инженерный центр</h3>
+                <h2 class="text-3xl font-black italic uppercase leading-none mb-4 text-white">ТЕХНО<br>НИКОЛЬ</h2>
+                <p class="text-sm text-slate-500 group-hover:text-slate-300 transition italic">Кровля, отопление RIFAR, вентиляция ВЕЗА.</p>
+                <div class="mt-8 text-orange-500 font-black text-xs uppercase tracking-widest flex items-center gap-2">Спецификации <span class="group-hover:translate-x-2 transition-transform">→</span></div>
+            </a>
+
+            <!-- ВХОД 3: ЖБИ И БЕТОН (ТВОЙ ЗАРАБОТОК 5%) -->
+            <a href="https://viktatyana-nexu.github.io" class="group relative bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col justify-end overflow-hidden hover:border-green-500 transition-all duration-500 shadow-2xl">
+                <div class="absolute top-0 left-0 w-full h-1 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                <h3 class="text-xs font-bold text-green-400 uppercase tracking-widest mb-2 italic">Логистика Бобров</h3>
+                <h2 class="text-3xl font-black italic uppercase leading-none mb-4 text-white uppercase italic">БЕТОН<br>& ЖБИ</h2>
+                <p class="text-sm text-slate-400 group-hover:text-slate-200 transition italic italic">Кольца, плиты и кирпич ВКСМ / БРАЕР.</p>
+                <div class="mt-8 text-green-400 font-black text-xs uppercase tracking-widest flex items-center gap-2">Заказать <span class="group-hover:translate-x-2 transition-transform">→</span></div>
+            </a>
+
+        </div>
+
+        <!-- ЛОГОТИПЫ ПАРТНЕРОВ (ДЛЯ ДОВЕРИЯ) -->
+        <div class="relative z-10 pt-12 border-t border-slate-900 mt-10">
+            <div class="flex flex-wrap justify-between items-center gap-6 opacity-30 grayscale contrast-125 text-[10px] font-black uppercase tracking-widest">
+                <span>PIK Group</span><span>LSR</span><span>Samolet</span><span>Technonicol</span><span>Braer</span><span>Vksm</span>
             </div>
         </div>
-    </section>
-
-    <!-- КАРТОЧКИ ОБОРУДОВАНИЯ -->
-    <section class="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
-        <!-- МАГМА -->
-        <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-blue-700 flex flex-col justify-between">
-            <div>
-                <h3 class="text-3xl font-black mb-4 text-slate-800 italic">MAGMA</h3>
-                <p class="text-slate-600 mb-6 font-medium">Профессиональный холод для магазинов: горки, витрины, бонеты.</p>
-                <ul class="text-sm space-y-2 text-slate-500 mb-8">
-                    <li>• Энергоэффективные системы</li>
-                    <li>• Выносной и встроенный холод</li>
-                    <li>• Гарантия и пусконаладка</li>
-                </ul>
-            </div>
-            <button class="w-full bg-blue-800 text-white py-4 rounded-xl font-bold uppercase tracking-wider hover:bg-blue-900 transition">Запросить расчет</button>
-        </div>
-
-        <!-- РУСЬ -->
-        <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-orange-500 flex flex-col justify-between">
-            <div>
-                <h3 class="text-3xl font-black mb-4 text-slate-800 italic">РУСЬ</h3>
-                <p class="text-slate-600 mb-6 font-medium">Торговые стеллажи, кассовые боксы и складские системы.</p>
-                <ul class="text-sm space-y-2 text-slate-500 mb-8">
-                    <li>• Стеллажи любых конфигураций</li>
-                    <li>• Кассовые узлы и турникеты</li>
-                    <li>• Проект расстановки бесплатно</li>
-                </ul>
-            </div>
-            <button class="w-full bg-orange-600 text-white py-4 rounded-xl font-bold uppercase tracking-wider hover:bg-orange-700 transition">Получить прайс</button>
-        </div>
-    </section>
-
-    <!-- ПОДВАЛ -->
-    <footer class="bg-slate-100 py-8 border-t border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-1">Региональный узел дистрибуции: Воронежская обл., г. Бобров</p>
-            <p class="text-slate-400 text-[9px]">© 2026 Viktanya Retail Systems. Работа через мастер-партнера.</p>
-        </div>
-    </footer>
+    </main>
 
 </body>
 </html>
